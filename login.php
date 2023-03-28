@@ -23,7 +23,7 @@
     <div class="container bg-success my-5">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="ISI-490-WebApp/hello.php">Home</a>
+                <a class="navbar-brand" href="/hello.php">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -45,20 +45,23 @@
                             <a class="nav-link"
                                 href="https://github.com/uAreHere/ISI-490-EV-Charging-Services-Locator">Source Code</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Login</a>
+                        </li>
                     </ul>
                 </div>
         </nav>
     </div>
     <div class="container card my-5" style="width: 18rem;">
         <div class="card-body" id="form">
-            <form class="px-4 py-3" action="login.php" method="POST">
+            <form class="px-4 py-3">
                 <div class="mb-3">
                     <label for="exampleDropdownFormEmail1" class="form-label">User Name</label>
-                    <input type="text" class="form-control" name="user" id="exampleUserName" placeholder="cicada3301">
+                    <input type="text" class="form-control" id="exampleUserName" placeholder="cicada3301">
                 </div>
                 <div class="mb-3">
                     <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" name="pass" id="exampleDropdownFormPassword1"
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
                         placeholder="Password">
                 </div>
                 <div class="mb-3">
