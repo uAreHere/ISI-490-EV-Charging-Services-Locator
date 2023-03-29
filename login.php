@@ -75,7 +75,7 @@
                 <button type="submit" class="btn btn-success">Sign in</button>
             </form>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="ISI-490-WebApp/hello.php/signUp.php">New around here? Sign up</a>
+            <a class="dropdown-item" href="ISI-490-WebApp/signUp.php">New around here? Sign up</a>
             <a class="dropdown-item" href="#">Forgot password?</a>
         </div>
     </div>
