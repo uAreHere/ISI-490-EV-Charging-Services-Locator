@@ -1,4 +1,5 @@
 <?php
+    #php script to connect to DB server. All Variables are DB credentials
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -10,3 +11,4 @@
     }
     echo " ";
 ?>
+
