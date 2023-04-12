@@ -9,34 +9,34 @@
 </div>
 
 
-<form action="includes/signup.inc.php" method="post"class="row g-3">
+<form action="/ISI-490-WEBAPP/includes/signup.inc.php" method="post"class="row g-3">
   <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4" required>
+    <label class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" required>
   </div>
   <div class="col-md-6">
-    <label for="inputUsername" class="form-label">Username</label>
-    <input type="username" class="form-control" id="inputUsername" required>
+    <label class="form-label">Username</label>
+    <input type="username" name="username" class="form-control" required>
   </div>
   <div class="col-md-6">
-    <label for="inputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="inputPassword1" required>
+    <label class="form-label">Password</label>
+    <input type="password" name="pwd" class="form-control" required>
   </div>
   <div class="col-md-6">
-    <label for="inputPassword2" class="form-label">Re-enter Password</label>
-    <input type="password" class="form-control" id="inputPassword2" required>
+    <label class="form-label">Re-enter Password</label>
+    <input type="password" name="pwdconf" class="form-control"required>
   </div>
   <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">First Name</label>
-    <input type="firstName" class="form-control" id="inputFirstName" required>
+    <label class="form-label">First Name</label>
+    <input type="text" name="firstname" class="form-control" required>
   </div>
   <div class="col-md-6">
-    <label for="inputLastName" class="form-label">Last Name</label>
-    <input type="lastName" class="form-control" id="inputLastName">
+    <label class="form-label">Last Name</label>
+    <input type="text" name="lastname" class="form-control">
   </div>
     <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip" required>
+    <label class="form-label">Zip</label>
+    <input type="number" name="zipcode" class="form-control" required>
   </div>
   
   <div class="col-12">

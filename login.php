@@ -1,13 +1,10 @@
 <?php
     include_once 'header.php';
-    #include("connection.php");
-    $username = $_POST['user'];
-    $password = $_POST['password']; 
 ?>
 
     <div class="container card my-5" style="width: 18rem;">
         <div class="card-body" id="form">
-            <form action ="includes/login.inc.php" method="post" class="px-4 py-3">
+            <form action ="/ISI-490-WEBAPP/includes/login.inc.php" method="post" class="px-4 py-3">
                 <div class="mb-3">
                     <label for="exampleDropdownFormEmail1" class="form-label">User Name</label>
                     <input type="text" class="form-control" id="exampleUserName" placeholder="cicada3301">
