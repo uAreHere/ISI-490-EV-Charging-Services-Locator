@@ -14,6 +14,7 @@
             if(password_verify($_POST["pwd"], $user["password"])) {
                 session_start();
 
+                session_regenerate_id();
                 $_SESSION["usersId"] = $user["usersId"];
 
                 header("Location: user-session.php");

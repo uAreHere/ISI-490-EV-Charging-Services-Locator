@@ -49,8 +49,14 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="/ISI-490-WEBAPP/station-locator.php">Find Charging Stations</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Favorited Stations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Book Charging Time</a>
+                        </li>
                         <li class="nav-item align-content-right">
-                            <a class="btn btn-success" role="button" href="/ISI-490-WEBAPP/login.php">Login</a>
+                            <a class="btn btn-success" role="button" href="/ISI-490-WEBAPP/logout.php">Logout</a>
                         </li>
                     </ul>
                 </div>
