@@ -14,19 +14,19 @@ if(isset($_POST["submit"])){
 
 
     if (emptyInputSignup($email, $username, $password, $pwdconf, $firstname, $zipcode) !== false) {
-        header("location: ../signUp.php?error=empty-input");
+        header("location: signUp.php?error=empty-input");
         exit();
     }
     if (invalidEmail($email) !== false){
-        header("location: ../signUp.php?error=invalid-email");
+        header("location: signUp.php?error=invalid-email");
         exit();
     }
     if (pwdMatch($password, $pwdconf) !== false){
-        header("location: ../signUp.php?error=bad-pw-match");
+        header("location: signUp.php?error=bad-pw-match");
         exit();
     }
     if (userExists($conn, $username, $email) !== false){
-        header("location: ../signUp.php?error=user-taken");
+        header("location: signUp.php?error=user-taken");
         exit();
     }
 
@@ -34,7 +34,7 @@ if(isset($_POST["submit"])){
 
 }
 else {
-    header("location: ../signUp.php");
+    header("location: signUp.php");
     exit();
 }
 

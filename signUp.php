@@ -9,7 +9,7 @@
 </div>
 
 
-<form action="/ISI-490-WEBAPP/includes/signup.inc.php" method="post"class="row g-3">
+<form action="signup-script.php" method="post" class="row g-3" novalidate>
   <div class="col-md-6">
     <label class="form-label">Email</label>
     <input type="email" name="email" class="form-control" required>
@@ -34,13 +34,13 @@
     <label class="form-label">Last Name</label>
     <input type="text" name="lastname" class="form-control">
   </div>
-    <div class="col-md-2">
+  <div class="col-md-2">
     <label class="form-label">Zip</label>
     <input type="number" name="zipcode" class="form-control" required>
   </div>
   
   <div class="col-12">
-    <button type="submit" class="btn btn-success">Sign Up</button>
+    <button class="btn btn-success">Sign Up</button>
   </div>
 </form>
 

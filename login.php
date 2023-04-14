@@ -1,17 +1,44 @@
 <?php
     include_once 'header.php';
+
+    $isInvalid = false;
+    if($_SERVER["REQUEST_METHOD"] === "POST") {
+        $mysqli = require __DIR__ . "/db-connection.php";
+
+        $sql = sprintf("SELECT * FROM users WHERE username = '%s'", $mysqli->real_escape_string($_POST["username"]));
+
+        $result = $mysqli->query($sql);
+        $user = $result->fetch_assoc();
+
+        if ($user) {
+            if(password_verify($_POST["pwd"], $user["password"])) {
+                session_start();
+
+                $_SESSION["usersId"] = $user["usersId"];
+
+                header("Location: user-session.php");
+                exit;
+            }
+        }
+        $isInvalid = true;
+    }
+
 ?>
 
     <div class="container card my-5" style="width: 18rem;">
         <div class="card-body" id="form">
-            <form action ="/ISI-490-WEBAPP/includes/login.inc.php" method="post" class="px-4 py-3">
+            <form method="post" class="px-4 py-3">
+                <?php if($isInvalid): ?>
+                    <em class="text-danger">Invalid Login</em>
+                <?php endif; ?>
+                
                 <div class="mb-3">
                     <label for="exampleDropdownFormEmail1" class="form-label">User Name</label>
-                    <input type="text" class="form-control" id="exampleUserName" placeholder="cicada3301">
+                    <input type="text" class="form-control" name="username" placeholder="cicada3301" value="<?= htmlspecialchars($_POST["username"] ?? "")?>">
                 </div>
                 <div class="mb-3">
                     <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                    <input type="password" class="form-control" name ="pwd" id="exampleDropdownFormPassword1"
                         placeholder="Password">
                 </div>
                 <div class="mb-3">
