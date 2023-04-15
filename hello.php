@@ -6,7 +6,9 @@
 
   <div class="container my-5 bg">
   <div class="wrapper text-light text-center position-top">
-			<h1 class="alert alert-secondary mt-3 py-2">EV Charging Services</h1>
+    <div class="alert alert-secondary w-auto mt-3 py-2">
+			<h1 class="alert-heading">EV Charging Services</h1>
+    </div>
 			<h4>Stay tuned for the latest developments in my EV Charging Station locator & EV Charging Services Web-App</h4>
       <h3>Checkout the Links Above to Get Started</h3>
     </div>

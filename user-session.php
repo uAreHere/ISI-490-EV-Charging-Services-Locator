@@ -22,8 +22,9 @@
 
         <?php else: ?>
             <p><a class="btn btn-success" role="button" href="/ISI-490-WEBAPP/login.php">Login</a> or <a class="btn btn-success" role="button" href="/ISI-490-WEBAPP/signUp.php">Sign Up</a></p>
-
         <?php endif; ?>
+
+        
 
 
     </div>
