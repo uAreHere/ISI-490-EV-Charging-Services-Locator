@@ -3,14 +3,18 @@
 ?>
 
 <body class="index">
-	<div class="container bg-success my-5">
-		<div class="wrapper text-light">
-			<h1>Hello World! I am Emilio, developing the EV Charging Services & Station Locator App on this server.</h1>
+
+  <div class="container my-5 bg">
+  <div class="wrapper text-light text-center position-top">
+			<h1 class="alert alert-secondary mt-3 py-2">EV Charging Services</h1>
 			<h4>Stay tuned for the latest developments in my EV Charging Station locator & EV Charging Services Web-App</h4>
-      <br></br>
-			<h5>Above You Can Find Links to Project Docs & Github Repo</h5>
+      <h3>Checkout the Links Above to Get Started</h3>
     </div>
+
   </div>
+  <h5 class="text-center">Above Are Links to Project Docs & Github Repo</h5>
+
+
 
 <?php
   include_once 'footer.php';
