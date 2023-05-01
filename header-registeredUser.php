@@ -40,6 +40,15 @@
                                     href="https://3.239.216.152/ProjectPlanningDocs/ISI-490-SoftwareRequirements.pdf">Software
                                     Requirements</a>
                             </li>
+                            <li><hr class="dropdown-divider">Data Flow Diagrams</li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/DFD-Context-Diagram.pdf">Context Diagram</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/DFD-Level0-Diagram.pdf">Level 0 Diagram</a>
+                            </li>
                             </ul>
                         </li>
                         <li class="nav-item">

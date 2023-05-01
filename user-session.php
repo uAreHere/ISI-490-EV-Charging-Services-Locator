@@ -1,5 +1,4 @@
 <?php
-    include "header-registeredUser.php";
     session_start();
 
     #print_r($_SESSION);
@@ -13,6 +12,7 @@
         $user= $result->fetch_assoc();
     }
 
+    include "header-registeredUser.php";
 ?>
 
     <div class="container">

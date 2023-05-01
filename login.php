@@ -1,6 +1,4 @@
 <?php
-    include_once 'header.php';
-
     $isInvalid = false;
     if($_SERVER["REQUEST_METHOD"] === "POST") {
         $mysqli = require __DIR__ . "/db-connection.php";
@@ -24,6 +22,7 @@
         $isInvalid = true;
     }
 
+    include_once 'header.php';
 ?>
 
     <div class="container card my-5" style="width: 18rem;">
