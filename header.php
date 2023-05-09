@@ -50,6 +50,15 @@
                             <a class="nav-link active" aria-current="page"
                                     href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/DFD-Level0-Diagram.pdf">Level 0 Diagram</a>
                             </li>
+                            <li><hr class="dropdown-divider">ER Diagrams</li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/ER-Diagram.pdf">ER Diagram</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/ER-Diagram-Physical.pdf">Physical ER Diagram</a>
+                            </li>
                             </ul>
                         </li>
                         <li class="nav-item">
