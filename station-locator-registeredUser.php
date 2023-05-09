@@ -181,7 +181,7 @@
                         echo '<td> <form method="POST" action="add-to-favorites.php">
                         <input type="hidden" name="station_id" value="'. $station->id.'">
                         <input type="hidden" name="station_name" value="'.$station->station_name.'">
-                        <button type="submit">Add to favorites</button>
+                        <button class="btn btn-secondary" type="submit">Add to Favorites</button>
                         </form>
                         </td>';
                         echo '</tr>';
