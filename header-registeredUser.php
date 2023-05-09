@@ -56,7 +56,7 @@
                                 href="https://github.com/uAreHere/ISI-490-EV-Charging-Services-Locator">Source Code</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/ISI-490-WEBAPP/station-locator.php">Find Charging Stations</a>
+                            <a class="nav-link active" href="/ISI-490-WEBAPP/station-locator-registeredUser.php">Find Charging Stations</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Favorited Stations</a>
