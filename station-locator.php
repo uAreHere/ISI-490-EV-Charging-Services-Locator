@@ -7,9 +7,78 @@
     <div class="card col-5">
     <div class="card-body">
     <form action="station-locator.php" method="post">
-        <label for="zipcode">Enter a Zipcode </label>
-        <input type="number" name="zipcode" id="zipcode" required>
-        <button class="btn btn-success" type="submit">Search</button>
+                <div class="form-group mt-2">
+                    <label for="city">Enter a City:</label>
+                    <input type="text" name="city" id="city" class="form-control" placeholder="City" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="state">Select a State:</label>
+                    <select name="state" id="state">
+                        <?php 
+                        $states = array(
+                            "Select option",
+                            "Alabama"=>"AL",
+"Alaska"=>"AK",
+"Arizona"=>"AZ",
+"Arkansas"=>"AR",
+"California"=>"CA",
+"Colorado"=>"CO",
+"Connecticut"=>"CT",
+"Delaware"=>"DE",
+"Florida"=>"FL",
+"Georgia"=>"GA",
+"Hawaii"=>"HI",
+"Idaho"=>"ID",
+"Illinois"=>"IL",
+"Indiana"=>"IN",
+"Iowa"=>"IA",
+"Kansas"=>"KS",
+"Kentucky"=>"KY",
+"Louisiana"=>"LA",
+"Maine"=>"ME",
+"Maryland"=>"MD",
+"Massachusetts"=>"MA",
+"Michigan"=>"MI",
+"Minnesota"=>"MN",
+"Mississippi"=>"MS",
+"Missouri"=>"MO",
+"Montana"=>"MT",
+"Nebraska"=>"NE",
+"Nevada"=>"NV",
+"New Hampshire"=>"NH",
+"New Jersey"=>"NJ",
+"New Mexico"=>"NM",
+"New York"=>"NY",
+"North Carolina"=>"NC",
+"North Dakota"=>"ND",
+"Ohio"=>"OH",
+"Oklahoma"=>"OK",
+"Oregon"=>"OR",
+"Pennsylvania"=>"PA",
+"Rhode Island"=>"RI",
+"South Carolina"=>"SC",
+"South Dakota"=>"SD",
+"Tennessee"=>"TN",
+"Texas"=>"TX",
+"Utah"=>"UT",
+"Vermont"=>"VT",
+"Virginia"=>"VA",
+"Washington"=>"WA",
+"West Virginia"=>"WV",
+"Wisconsin"=>"WI",
+"Wyoming"=>"WY"
+                        );
+                        foreach($states as $abbr => $state) {
+                            echo "<option value=\"$abbr\">$state</option>";
+                        }
+                        ?>
+                    </select>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="zipcode">Enter a Zipcode </label>
+                    <input type="number" name="zipcode" id="zipcode">
+                </div>
+            <button class="btn btn-success" type="submit">Search</button>
     </form>
     </div>
     </div>
@@ -28,12 +97,31 @@
         <?php 
                     $url = 'https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json';
 
-                    if(isset($_POST['zipcode'])){
-                        $zipcode = $_POST['zipcode'];
+                    if(isset($_POST['zipcode']) || isset($_POST['city']) || isset($_POST['state'])){
+                        $zipcode =isset($_POST['zipcode']) ? $_POST['zipcode'] : "";
+                        $city =isset($_POST['city']) ? $_POST['city'] : "";
+                        $state = isset($_POST['state']) ? $_POST['state'] : "";
+                        $location = "";
+
+                        if(!empty($zipcode)){
+                            if(strlen($zipcode) == 5 && is_numeric($zipcode)){
+                                $location = $zipcode;
+                            }
+                            else {
+                                echo "Please enter a valid 5-digit Zipcode";
+                                exit;
+                            }
+                        }
+                        else if(!empty($city) && !empty($state)){
+                            $location = urlencode($city . "," . $state);
+                        } else {
+                            echo "Please enter a valid Zipcode or City & State";
+                            exit;
+                        }
                     
                     $params = array(
                         'api_key' => 'w0Gs0EehnhpFgQ6aUZRAav4ph1rmdOtZQ54BnnHZ',
-                        'location' => $zipcode,
+                        'location' => $location,
                         'fuel_type' => 'ELEC',
                         'access' => 'public',
                         'ev_network' => 'all'
@@ -49,6 +137,11 @@
                     curl_close($ch);
                     
                     $data = json_decode($response);
+
+                    if(empty($data->fuel_stations)){
+                        echo "There are no stations available in the area specified, please try again.";
+                        exit;
+                    }
 
                     $lat = $data->fuel_stations[0]->latitude;
                     $lng = $data->fuel_stations[0]->longitude;
