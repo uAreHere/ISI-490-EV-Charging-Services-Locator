@@ -32,37 +32,37 @@
                             </a>
                             <ul class="dropdown-menu">
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/ISI-490-SystemRequestProposal&FeasibilityAnalysis.pdf">System
+                            <a class="nav-link active" target="_blank" rel="noopener noreferrer" aria-current="page"
+                                href="./documents/ISI-490-SystemRequestProposal&FeasibilityAnalysis.pdf">System
                                 Request Proposal</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/ISI-490-SoftwareRequirements.pdf">Software
+                                <a class="nav-link active" target="_blank" rel="noopener noreferrer" aria-current="page"
+                                    href="./documents/ISI-490-SoftwareRequirements.pdf">Software
                                     Requirements</a>
                             </li>
                             <li><hr class="dropdown-divider">Data Flow Diagrams</li>
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/DFD-Context-Diagram.pdf">Context Diagram</a>
+                            <a class="nav-link active" target="_blank" rel="noopener noreferrer" aria-current="page"
+                                    href="./documents/DFD-Context-Diagram.pdf">Context Diagram</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/DFD-Level0-Diagram.pdf">Level 0 Diagram</a>
+                            <a class="nav-link active" aria-current="page" target="_blank" rel="noopener noreferrer"
+                                    href="./documents/DFD-Level0-Diagram.pdf">Level 0 Diagram</a>
                             </li>
                             <li><hr class="dropdown-divider">ER Diagrams</li>
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/ER-Diagram.pdf">ER Diagram</a>
+                            <a class="nav-link active" aria-current="page" target="_blank" rel="noopener noreferrer"
+                                    href="./documents/ER-Diagram.pdf">ER Diagram</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                    href="https://ec2-3-239-216-152.compute-1.amazonaws.com/ProjectPlanningDocs/ER-Diagram-Physical.pdf">Physical ER Diagram</a>
+                            <a class="nav-link active" aria-current="page" target="_blank" rel="noopener noreferrer"
+                                    href="./documents/ER-Diagram-Physical.pdf">Physical ER Diagram</a>
                             </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active"
+                            <a class="nav-link active" target="_blank" rel="noopener noreferrer"
                                 href="https://github.com/uAreHere/ISI-490-EV-Charging-Services-Locator">Source Code</a>
                         </li>
                         <li class="nav-item">
