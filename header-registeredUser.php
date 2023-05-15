@@ -75,7 +75,7 @@
                             <a class="nav-link active" href="/ISI-490-WEBAPP/user-session.php">Favorited Stations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./reserveTime.php">Book Charging Time</a>
+                            <a class="nav-link active" href="./user-reservations.php">My Reservations</a>
                         </li>
                         <li class="nav-item align-content-right">
                             <a class="btn btn-success" role="button" href="/ISI-490-WEBAPP/logout.php">Logout</a>

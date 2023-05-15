@@ -59,7 +59,22 @@
                       echo "<td>{$station['evConnectorTypes']}</td>";
                       echo "<td>{$station['chargePricing']}</td>";
                       echo '<td><a href="https://www.google.com/maps/dir/?api=1&destination='. urlencode($station["latitude"] . ',' . $station["longitude"]) .'&travelmode=driving" target="_blank">Get Directions</a></td>';
-                      echo "<td><button class='btn btn-secondary'><a href='./reserveTime.php' class='link-light'>Reserve</a></button></td>";
+                      echo "<td>
+                      <form method='POST' action='reserveTime.php'>
+                      <input type='hidden' name='station_id' value=".$station_id.">
+                      <input type='hidden' name='station_name' value=".$station["stationName"].">
+                      <input type='hidden' name='street_address' value=".$station["stationAddress"].">
+                      <input type='hidden' name='city' value=".$station["stationCity"].">
+                      <input type='hidden' name='state' value=".$station["stationState"].">
+                      <input type='hidden' name='zip' value=".$station["stationZipcode"].">
+                      <input type='hidden' name='ev_connector_types' value=".$station["evConnectorTypes"].">
+                      <input type='hidden' name='ev_network' value=".$station["evNetwork"].">
+                      <input type='hidden' name='ev_pricing' value=".$station["chargePricing"].">
+                      <input type='hidden' name='latitude' value=".$station["latitude"].">
+                      <input type='hidden' name='longitude' value=".$station["longitude"].">
+                      <button class='btn btn-secondary' type='submit'>Reserve</button>
+                      </form>
+                      </td>";
                       echo "</tr>";
                     }
                 }
@@ -73,7 +88,6 @@
 <?php
     
 ?>
-
 
 
 

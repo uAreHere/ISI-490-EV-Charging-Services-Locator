@@ -195,7 +195,7 @@
                         <button class="btn btn-success" type="submit">Add to Favorites</button>
                         </form>
                         </td>';
-                        echo '<td> <form method="POST" action="">
+                        echo '<td> <form method="POST" action="reserveTime.php">
                         <input type="hidden" name="station_id" value="'. $station->id.'">
                         <input type="hidden" name="station_name" value="'.$station->station_name.'">
                         <input type="hidden" name="street_address" value="'.$station->street_address.'">
@@ -207,7 +207,7 @@
                         <input type="hidden" name="ev_pricing" value="'.$station->ev_pricing.'">
                         <input type="hidden" name="latitude" value="'.$station->latitude.'">
                         <input type="hidden" name="longitude" value="'.$station->longitude.'">
-                        <button class="btn btn-secondary"><a href="./reserveTime.php" class="link-light">Reserve</a></button>
+                        <button class="btn btn-secondary" type="submit">Reserve</button>
                         </form>
                         </td>';
                         echo '</tr>';
