@@ -50,6 +50,10 @@
                             <a class="nav-link active" aria-current="page" target="_blank" rel="noopener noreferrer"
                                     href="./documents/DFD-Level0-Diagram.pdf">Level 0 Diagram</a>
                             </li>
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" target="_blank" rel="noopener noreferrer"
+                                    href="./documents/DFD-Level1-Diagram.pdf">Level 1 Diagram</a>
+                            </li>
                             <li><hr class="dropdown-divider">ER Diagrams</li>
                             <li class="nav-item">
                             <a class="nav-link active" aria-current="page" target="_blank" rel="noopener noreferrer"

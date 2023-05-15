@@ -103,6 +103,8 @@
       <th scope="col">Distance</th>
       <th scope="col">Directions</th>
       <th scope="col">More Info</th>
+      <th scope="col">Add to Favorites</th>
+      <th scope="col">Reserve a Time</th>
     </tr>
   </thead>
         <?php 
@@ -181,14 +183,36 @@
                         echo '<td> <form method="POST" action="add-to-favorites.php">
                         <input type="hidden" name="station_id" value="'. $station->id.'">
                         <input type="hidden" name="station_name" value="'.$station->station_name.'">
-                        <button class="btn btn-secondary" type="submit">Add to Favorites</button>
+                        <input type="hidden" name="street_address" value="'.$station->street_address.'">
+                        <input type="hidden" name="city" value="'.$station->city.'">
+                        <input type="hidden" name="state" value="'.$station->state.'">
+                        <input type="hidden" name="zip" value="'.$station->zip.'">
+                        <input type="hidden" name="ev_connector_types" value="'. implode($station->ev_connector_types).'">
+                        <input type="hidden" name="ev_network" value="'.$station->ev_network.'">
+                        <input type="hidden" name="ev_pricing" value="'.$station->ev_pricing.'">
+                        <input type="hidden" name="latitude" value="'.$station->latitude.'">
+                        <input type="hidden" name="longitude" value="'.$station->longitude.'">
+                        <button class="btn btn-success" type="submit">Add to Favorites</button>
+                        </form>
+                        </td>';
+                        echo '<td> <form method="POST" action="">
+                        <input type="hidden" name="station_id" value="'. $station->id.'">
+                        <input type="hidden" name="station_name" value="'.$station->station_name.'">
+                        <input type="hidden" name="street_address" value="'.$station->street_address.'">
+                        <input type="hidden" name="city" value="'.$station->city.'">
+                        <input type="hidden" name="state" value="'.$station->state.'">
+                        <input type="hidden" name="zip" value="'.$station->zip.'">
+                        <input type="hidden" name="ev_connector_types" value="'. implode($station->ev_connector_types).'">
+                        <input type="hidden" name="ev_network" value="'.$station->ev_network.'">
+                        <input type="hidden" name="ev_pricing" value="'.$station->ev_pricing.'">
+                        <input type="hidden" name="latitude" value="'.$station->latitude.'">
+                        <input type="hidden" name="longitude" value="'.$station->longitude.'">
+                        <button class="btn btn-secondary"><a href="./reserveTime.php" class="link-light">Reserve</a></button>
                         </form>
                         </td>';
                         echo '</tr>';
                     }
                     echo '</tbody>';
-
-                    
 
                     echo '<script>';
                     echo 'var lat = ' . $lat . ';';
