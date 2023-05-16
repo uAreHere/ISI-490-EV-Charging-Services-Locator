@@ -94,7 +94,7 @@
     </div>
 <div class="pt-3"> 
 <table class="table table-striped">
-  <thead>
+  <thead class="text-wrap">
     <tr>
       <th scope="col">Station Name</th>
       <th scope="col">Address</th>
