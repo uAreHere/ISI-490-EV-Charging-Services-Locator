@@ -30,6 +30,7 @@
                     <th scope="col">Pricing</th>
                     <th scope="col">Get Directions</th>
                     <th scope="col">Reserve A Time</th>
+                    <th scope="col">Rate This Station</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,6 +74,11 @@
                       <input type='hidden' name='latitude' value=".$station["latitude"].">
                       <input type='hidden' name='longitude' value=".$station["longitude"].">
                       <button class='btn btn-secondary' type='submit'>Reserve</button>
+                      </form>
+                      </td>";
+                      echo "<td>
+                      <form method='POST' action='add-rating.php'>
+                      <button class='btn btn-success'>Add Rating</button>
                       </form>
                       </td>";
                       echo "</tr>";

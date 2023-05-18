@@ -15,7 +15,7 @@
 
 <body class="index">
     <div class="container bg-success my-5">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/ISI-490-WEBAPP/user-session.php"><img src="resources/home-badge.jpg" width="30" height="30"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,8 +25,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown p-2">
+                            <a class="nav-link dropdown-toggle btn btn-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Project Documents
                             </a>
                             <ul class="dropdown-menu">
@@ -64,23 +64,24 @@
                             </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" target="_blank" rel="noopener noreferrer"
+                        <li class="nav-item p-2">
+                            <a class="nav-link active btn btn-light" target="_blank" rel="noopener noreferrer"
                                 href="https://github.com/uAreHere/ISI-490-EV-Charging-Services-Locator">Source Code</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/ISI-490-WEBAPP/station-locator-registeredUser.php">Find Charging Stations</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link active btn btn-light" href="/ISI-490-WEBAPP/station-locator-registeredUser.php">Find Charging Stations</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/ISI-490-WEBAPP/user-session.php">Favorited Stations</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link active btn btn-light" href="/ISI-490-WEBAPP/user-session.php">Favorited Stations</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./user-reservations.php">My Reservations</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link active btn btn-light" href="./user-reservations.php">My Reservations</a>
                         </li>
-                        <li class="nav-item align-content-right">
-                            <a class="btn btn-success" role="button" href="/ISI-490-WEBAPP/logout.php">Logout</a>
+                        <li class="nav-item p-2">
+                            <a class="nav-link active btn btn-light" href="./station-reviews.php">Station Ratings</a>
                         </li>
                     </ul>
+                    <a class="btn btn-warning" role="button" href="/ISI-490-WEBAPP/logout.php">Logout</a>
                 </div>
         </nav>
     </div>

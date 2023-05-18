@@ -150,6 +150,7 @@
                     curl_close($ch);
                     
                     $data = json_decode($response);
+                    
 
                     if(empty($data->fuel_stations)){
                         echo "There are no stations available in the area specified, please try again.";
@@ -161,7 +162,7 @@
                     $maps_url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyA9r__E54NHBxH-npBy9GU2hfxBv0eOKko&q=$lat,$lng";
 
                     echo "<iframe width='100%' height='400' frameborder='0' style='border:0' id='map' src='$maps_url' allowfullscreen></iframe>";
-                    
+
                     echo '<tbody>';
                     foreach($data->fuel_stations as $station){
                         echo '<tr>';
