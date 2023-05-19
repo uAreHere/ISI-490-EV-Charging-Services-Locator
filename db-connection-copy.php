@@ -1,9 +1,9 @@
 <?php
-#adding changes to connect to Prof.Chun hosted site
+
 $host = "localhost";
 $dbname = "user_credentials";
-$username = "phpmyadmin";
-$password = "dmproject";
+$username = "root";
+$password = "";
 
 $mysqli = new mysqli(hostname: $host, username:$username, password:$password, database:$dbname);
 
