@@ -83,6 +83,9 @@
                         <li class="nav-item p-2">
                             <a class="nav-link active btn btn-light" href="./station-reviews.php">Station Ratings</a>
                         </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link active btn btn-light" href="./analytics-registeredUser.php">Analytics</a>
+                        </li>
                     </ul>
                     <a class="btn btn-warning" role="button" href="/ISI-490-WEBAPP/logout.php">Logout</a>
                 </div>

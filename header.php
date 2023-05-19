@@ -75,6 +75,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="./station-reviews-public.php">Station Ratings</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./analytics-public.php">Analytics</a>
+                        </li>
                     </ul>
                     <a class="btn btn-success" role="button" href="/ISI-490-WEBAPP/login.php">Login</a>
                 </div>
