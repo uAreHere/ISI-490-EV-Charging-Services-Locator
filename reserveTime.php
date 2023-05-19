@@ -42,18 +42,24 @@
 
             echo "<div class='container'>";
 
-
-            echo "<h2>Reservation for: $stationName</h2>";
-            echo "<h3>Address: $stationAddress</h3>";
+            echo "<div class='card'>";
+            echo "<div class='card-body'>";
+            
+            echo "<h2 class='card-title'>Reservation for: $stationName</h2>";
+            echo "<h3 class='card-subtitle'>Address: $stationAddress</h3>";
 
             echo "<form method='POST' action='reservation-script.php'>";
             echo "<input type='hidden' name='usersId' value='$userID'>";
             echo "<input type='hidden' name='station_id' value='$stationID'>";
-            echo "Select Date: <input type='date' name='reservation_date'><br>";
-            echo "Select Time: <input type='time' name='reservation_time'><br>";
-            echo "<input type='submit' value='Confirm Reservation'>";
+            echo "<label class='form-label'>Select Date</label>";
+            echo "<input type='date' name='reservation_date'><br>";
+            echo "<label class='form-label'>Select Time</label>";
+            echo "<input type='time' name='reservation_time'><br>";
+            echo "<button class='btn btn-success' type='submit'>Confirm Reservation</button>";
             echo "</form>";
-
+            echo "</div>";
+            echo "</div>";
+            
             echo "</div>";
 
 
@@ -69,17 +75,23 @@
 
             echo "<div class='container'>";
 
+            echo "<div class='card'>";
+            echo "<div class='card-body'>";
 
-            echo "<h2>Reservation for: $station_name</h2>";
-            echo "<h3>Address: $station_address</h3>";
+            echo "<h2 class='card-title'>Reservation for: $station_name</h2>";
+            echo "<h3 class='card-subtitle'>Address: $station_address</h3>";
 
             echo "<form method='POST' action='reservation-script.php'>";
             echo "<input type='hidden' name='usersId' value='$userID'>";
             echo "<input type='hidden' name='station_id' value='$stationID'>";
-            echo "Select Date: <input type='date' name='reservation_date'><br>";
-            echo "Select Time: <input type='time' name='reservation_time'><br>";
-            echo "<input type='submit' value='Confirm Reservation'>";
+            echo "<label class='form-label'>Select Date</label><br>";
+            echo "<input type='date' name='reservation_date'><br>";
+            echo "<label class='form-label'>Select Time</label><br>";
+            echo "<input type='time' name='reservation_time'><br>";
+            echo "<button class='btn btn-success m-3' type='submit'>Confirm Reservation</button>";
             echo "</form>";
+            echo "</div>";
+            echo "</div>";
 
             echo "</div>";
         }
