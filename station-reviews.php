@@ -33,8 +33,8 @@ include_once "header-registeredUser.php";
                     <td><?php echo $row["numReviews"];?></td>
                     <td><?php echo number_format($row["avgRating"], 2);?></td>
                     <td><form method="POST" action="add-rating.php">
-                        <input type="hidden" name="station_id" value="$row['stationID']">
-                        <input type="hidden" name="station_name" value="$row['stationName']">
+                        <input type="hidden" name="stationID" value="<?php echo $row['stationID'];?>">
+                        <input type="hidden" name="stationName" value="<?php echo $row['stationName'];?>">
                         <button class="btn btn-success" type="submit">Add Rating</button> 
                     </form></td>
                 </tr>

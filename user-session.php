@@ -78,6 +78,8 @@
                       </td>";
                       echo "<td>
                       <form method='POST' action='add-rating.php'>
+                      <input type='hidden' name='stationID' value=".$station_id.">
+                      <input type='hidden' name='stationName' value=".$station["stationName"].">
                       <button class='btn btn-success'>Add Rating</button>
                       </form>
                       </td>";
