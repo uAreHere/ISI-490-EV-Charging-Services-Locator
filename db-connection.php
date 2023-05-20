@@ -5,10 +5,11 @@ $dbname = "user_credentials";
 $username = "phpmyadmin";
 $password = "dmproject";
 
-$mysqli = new mysqli(hostname: $host, username:$username, password:$password, database:$dbname);
+// $mysqli = new mysqli(hostname: $host, username:$username, password:$password, database:$dbname);
+// if($mysqli->connect_errno) {
+//     die("Connection error: " .$mysqli->connect_error);
+// }
 
-if($mysqli->connect_errno) {
-    die("Connection error: " .$mysqli->connect_error);
-}
+$mysqli = mysqli_connect($host,$username,$password,$dbname) or die ("Connection Failed");
 
 return $mysqli;
