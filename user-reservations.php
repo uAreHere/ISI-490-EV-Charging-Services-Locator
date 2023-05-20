@@ -6,7 +6,7 @@ if(isset($_SESSION["usersId"])) {
 
     echo "<div class='container'>";
 
-    $mysqli = require __DIR__ ."/db-connection.php";
+    $mysqli = require __DIR__ ."db-connection.php";
     $userId = $_SESSION["usersId"];
 
     $query = "SELECT userreservations.reservationID, chargingstations.stationName, chargingstations.stationAddress, chargingreservations.date, chargingreservations.time FROM userreservations JOIN chargingreservations ON userreservations.reservationID = chargingreservations.reservationID JOIN chargingstations ON chargingreservations.stationID = chargingstations.stationID WHERE userreservations.userID = ?";

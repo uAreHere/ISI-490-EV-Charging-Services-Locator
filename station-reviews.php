@@ -1,5 +1,5 @@
 <?php 
-$mysqli = require __DIR__ . "/db-connection.php";
+$mysqli = require __DIR__ . "db-connection.php";
 
 $query = "SELECT chargingstations.stationID, chargingstations.stationName, chargingstations.stationAddress, chargingstations.stationCity, chargingstations.stationState, chargingstations.stationZipcode, COUNT(stationreviews.stationID) AS numReviews, AVG(stationreviews.rating) AS avgRating FROM chargingstations LEFT JOIN stationreviews ON chargingstations.stationID = stationreviews.stationID GROUP BY chargingstations.stationID";
 

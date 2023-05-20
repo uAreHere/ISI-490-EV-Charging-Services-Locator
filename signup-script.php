@@ -14,7 +14,7 @@ if ($_POST["pwd"] !== $_POST["pwdconf"]) {
 
 $hashed_password = password_hash($_POST["pwd"], PASSWORD_DEFAULT);
 
-$mysqli = require __DIR__ . "/db-connection.php";
+$mysqli = require __DIR__ . "db-connection.php";
 
 $sql = "INSERT INTO users (username, password, email, firstname, lastname, zipcode) VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -38,6 +38,4 @@ if ($stmt->execute()){
 };
 
 
-
-#var_dump($hashed_password);
 

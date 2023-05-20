@@ -1,10 +1,8 @@
 <?php
     session_start();
 
-    #print_r($_SESSION);
-
     if (isset($_SESSION["usersId"])) {
-        $mysqli = require __DIR__ . "/db-connection.php";
+        $mysqli = require __DIR__ . "db-connection.php";
 
         $sql = "SELECT * FROM users WHERE usersId = {$_SESSION["usersId"]}";
 
@@ -35,7 +33,7 @@
             </thead>
             <tbody>
             <?php 
-                $mysqli = require __DIR__ . "/db-connection.php";
+                $mysqli = require __DIR__ . "db-connection.php";
 
                 $user_id = $_SESSION["usersId"];
                 $sql = "SELECT chargingstations.stationID, chargingstations.stationName, chargingstations.stationAddress, chargingstations.stationCity, chargingstations.stationState, chargingstations.evConnectorTypes, chargingstations.chargePricing, chargingstations.latitude, chargingstations.longitude 

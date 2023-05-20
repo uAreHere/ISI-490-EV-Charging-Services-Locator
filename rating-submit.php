@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $mysqli = require __DIR__ . "/db-connection.php";
+    $mysqli = require __DIR__ . "db-connection.php";
 
     if (isset($_SESSION["usersId"]) && isset($_POST["stationID"]) && isset($_POST["stationName"]) && isset($_POST["rating"])) {
         $userID = $_SESSION["usersId"];

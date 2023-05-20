@@ -1,7 +1,7 @@
 <?php
     $isInvalid = false;
     if($_SERVER["REQUEST_METHOD"] === "POST") {
-        $mysqli = require __DIR__ . "/db-connection.php";
+        $mysqli = require __DIR__ . "db-connection.php";
 
         $sql = sprintf("SELECT * FROM users WHERE username = '%s'", $mysqli->real_escape_string($_POST["username"]));
 
@@ -52,7 +52,7 @@
                 <button type="submit" class="btn btn-success">Log In</button>
             </form>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/ISI-490-WEBAPP/signUp.php">New around here? <button class="btn btn-info">Sign up</button></a>
+            <a class="dropdown-item" href="signUp.php">New around here? <button class="btn btn-info">Sign up</button></a>
             <a class="dropdown-item" href="#">Forgot password?</a>
         </div>
     </div>

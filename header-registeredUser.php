@@ -20,7 +20,7 @@
     <div class="container bg-success my-5">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/ISI-490-WEBAPP/user-session.php"><img src="resources/home-badge.jpg" width="30" height="30"></a>
+                <a class="navbar-brand" href="user-session.php"><img src="resources/home-badge.jpg" width="30" height="30"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -72,22 +72,22 @@
                                 href="https://github.com/uAreHere/ISI-490-EV-Charging-Services-Locator">Source Code</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link active btn btn-light" href="/ISI-490-WEBAPP/station-locator-registeredUser.php">Find Charging Stations</a>
+                            <a class="nav-link active btn btn-light" href="station-locator-registeredUser.php">Find Charging Stations</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link active btn btn-light" href="/ISI-490-WEBAPP/user-session.php">Favorited Stations</a>
+                            <a class="nav-link active btn btn-light" href="user-session.php">Favorited Stations</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link active btn btn-light" href="./user-reservations.php">My Reservations</a>
+                            <a class="nav-link active btn btn-light" href="user-reservations.php">My Reservations</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link active btn btn-light" href="./station-reviews.php">Station Ratings</a>
+                            <a class="nav-link active btn btn-light" href="station-reviews.php">Station Ratings</a>
                         </li>
                         <li class="nav-item p-2">
-                            <a class="nav-link active btn btn-light" href="./analytics-registeredUser.php">Analytics</a>
+                            <a class="nav-link active btn btn-light" href="analytics-registeredUser.php">Analytics</a>
                         </li>
                     </ul>
-                    <a class="btn btn-warning" role="button" href="/ISI-490-WEBAPP/logout.php">Logout</a>
+                    <a class="btn btn-warning" role="button" href="logout.php">Logout</a>
                 </div>
         </nav>
     </div>
