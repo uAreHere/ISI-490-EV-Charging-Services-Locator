@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if(isset($_SESSION["usersId"])){
-    $mysqli = require __DIR__ . "db-connection.php";
+    $mysqli = require __DIR__ . "/db-connection.php";
 
     $stationID = $_POST['station_id'];
     $reservationDate = $_POST['reservation_date'];

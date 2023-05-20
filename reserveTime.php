@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $mysqli = require __DIR__ . "db-connection.php";
+    $mysqli = require __DIR__ . "/db-connection.php";
     
     include_once 'header-registereduser.php';
 

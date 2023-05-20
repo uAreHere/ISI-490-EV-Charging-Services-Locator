@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION["usersId"])) {
-    $mysqli = require __DIR__ . "db-connection.php";
+    $mysqli = require __DIR__ . "/db-connection.php";
 
     if (isset($_POST["station_id"]) && isset($_POST["station_name"])) {
         $station_id = $mysqli->real_escape_string($_POST["station_id"]);
